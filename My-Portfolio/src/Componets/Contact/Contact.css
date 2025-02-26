@@ -1,67 +1,64 @@
 .contact {
     padding: 100px 150px 50px 150px;
     background-color: rgba(59, 131, 246, 0.188);
-    height: 100vh;
+    min-height: 100vh; 
     animation: fadein 0.5s ease-in-out;
-
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
   }
-
-  100% {
-    opacity: 1;
+  
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
-}
-
-
-.contact h2 {
+  
+  .contact h2 {
     font-size: 20px;
     text-align: center;
     padding: 20px;
-    color: #2663EB;
-}
-
-.info {
+    color: #2663eb;
+  }
+  
+  .info {
     display: flex;
     gap: 70px;
-}
-
-.right h3 {
+  }
+  
+  .right h3 {
     font-size: 20px;
     padding-bottom: 20px;
-    color: #2663EB;
-}
-
-.connect {
+    color: #2663eb;
+  }
+  
+  .connect {
     width: 600px;
     padding-bottom: 10px;
-}
-
-.details {
+  }
+  
+  .details {
     padding: 30px 0;
-}
-
-.details p {
+  }
+  
+  .details p {
     padding-bottom: 20px;
-}
-
-.details p i {
+  }
+  
+  .details p i {
     padding-right: 20px;
-    color: #2663EB;
+    color: #2663eb;
     font-size: 25px;
-}
-
-.social-links h4 {
-    color: #2663EB;
+  }
+  
+  .social-links h4 {
+    color: #2663eb;
     padding-bottom: 20px;
-}
-
-.social-links img {
-    height: 30px;
-    width: 30px;
+  }
+  
+  .social-links img {
+    height: 50px;
+    width: 50px;
     padding: 10px;
     background-color: #fff;
     border-radius: 50%;
@@ -70,93 +67,101 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-}
-
-.social-links img:hover{
+  }
+  
+  .social-links img:hover {
     transform: scale(1.1);
-    }
+  }
 
-.left input {
-    display: flex;
+
+  .left{
+    width: 100%;
+  }
+  
+  .left input,
+  .left textarea {
+    display: block; 
     padding: 15px;
-    margin: 20px;
-    width: 500px;
+    margin: 20px 0; 
+    width: 100%; 
     border: none;
     background-color: #fff;
     border-radius: 15px;
-}
-
-.left textarea {
-    display: flex;
+  }
+  
+  .left textarea {
+    height: 150px; 
+  }
+  
+  .left button {
     padding: 10px;
-    height: 70px;
-    margin: 20px;
-    width: 500px;
-    background-color: #fff;
-    border-radius: 15px;
-    border: none;
-}
-
-.left button {
-    padding: 10px;
-    margin: 25px 200px;
+    margin: 25px auto; 
     font-weight: 400;
     width: 150px;
     border-radius: 20px;
-    background-color: #2663EB;
+    background-color: #2663eb;
     color: #fff;
     font-size: 16px;
     border: none;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
-}
+  }
+  
+  .left button:hover {
+    transform: scale(1.1);
+  }
+  
 
-
-.left button:hover{
-transform: scale(1.1);
-}
-
-
-@media (max-width: 768px) {
+  @media (max-width: 1200px) {
     .contact {
-        padding: 60px 20px 50px 20px; 
+      padding: 100px 50px 50px 50px;
     }
-
+  
     .info {
-        flex-direction: column; 
-        gap: 30px; 
+      gap: 50px; 
     }
-
-    .right {
-        width: 100%; 
-    }
-
+  
     .connect {
-        width: 100%; 
+      width: 100%; 
     }
-
+  }
+  
+  @media (max-width: 768px) {
+    .contact {
+      padding: 60px 20px 50px 20px;
+    }
+  
+    .info {
+      flex-direction: column; 
+      gap: 30px;
+    }
+  
+    .right {
+      width: 100%; 
+    }
+  
     .left input,
     .left textarea {
-        width: 90%; 
-        margin: 10px 0; 
+      width: 100%; 
+      margin: 10px 0; 
     }
-
+  
     .left button {
-        margin: 10px auto; 
+      margin: 10px auto;
     }
-}
-
-@media (max-width: 480px) {
+  }
+  
+  @media (max-width: 480px) {
     .contact {
-        padding: 60px 10px 50px 10px;
+      padding: 60px 10px 50px 10px;
     }
-
+  
     .info {
-        gap: 20px; 
+      gap: 20px; 
     }
-
+  
     .left button {
-        width: 50%;
-        margin-left: 70px;
+      width: 100%; 
+      margin-left: 0; 
     }
-}
+  }
