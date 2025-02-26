@@ -26,7 +26,7 @@ function Contact() {
     setStatus("Sending...");
 
     try {
-      const response = await axios.post("http://localhost:5000/send-email", formData);
+      const response = await axios.post("https://rohitbackend-6yl9.onrender.com/send-email", formData);
       setStatus(response.data.message);
       setFormData({ name: "", email: "", number: "", place: "", message: "" }); 
     } catch (error) {
