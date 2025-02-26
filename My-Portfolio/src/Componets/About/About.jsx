@@ -2,7 +2,7 @@ import React from 'react'
 import './About.css';
 import image from "../../assets/Rohit.jpg";
 import HTML from "../../assets/HTML.png";
-import CSS from "../../assets/Css.png";
+import CSS from "../../assets/CSS.png";
 import JS from "../../assets/JS.png";
 import NODEJS from "../../assets/Nodejs.png";
 import EXPREES from "../../assets/Expreesjs.png";
