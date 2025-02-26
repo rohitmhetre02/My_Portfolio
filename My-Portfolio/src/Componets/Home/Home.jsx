@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Typed from 'typed.js';
 import './Home.css';
-import image from "../../assets/Roya.png";
+import image from "../../assets/roya.png";
 import Resume from "../../assets/Rohit Mhetre Resume.pdf";
 import Linkdian from "../../assets/linkedin.png";
 import instagram from "../../assets/instagram.png";
