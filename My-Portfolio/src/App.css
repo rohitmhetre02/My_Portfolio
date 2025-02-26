@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color:rgba(59, 131, 246, 0.188) ;
+  user-select: none;
+}
+
+
+.spinner {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background-color:rgba(59, 131, 246, 0.188);
+    opacity: 1;
+  }
+.spinner_one, .spinner_two, .spinner_three, .spinner_four{
+    position: relative;
+    width: 25%;
+    height: 100%;
+    background-color:  #2663EB;
+    top: 1000px;
+  }
+  .spinner_one{
+    animation: spin1 1.5s ease-in-out;
+  }
+  .spinner_two{
+    animation: spin2 1.5s ease-in-out;
+  }
+  .spinner_three{
+    animation: spin3 1.5s ease-in-out;
+  }
+  .spinner_four{
+    animation: spin4 1.5s ease-in-out;
+  }
+
+
+  
+  @keyframes spin1 {
+    0% { translate:0px 0px; }
+    35%{ translate:0px -1000px;}
+    50%{ translate:0px -1000px;}
+    55%{ translate:0px -1000px;}
+    95%{opacity:1;}
+    99%{opacity:0;}
+    100% { translate:0px 0px; }
+  }
+  @keyframes spin2 {
+    0% { translate:0px 0px; }
+    40%{ translate:0px -1000px;}
+    50%{ translate:0px -1000px;}
+    60%{ translate:0px -1000px;}
+    95%{opacity:1;}
+    99%{opacity:0;}
+    100% { translate:0px 0px; }
+  }
+  @keyframes spin3 {
+    0% { translate:0px 0px; }
+    45%{ translate:0px -1000px;}
+    50%{ translate:0px -1000px;}
+    65%{ translate:0px -1000px;}
+    95%{opacity:1;}
+    99%{opacity:0;}
+    100% { translate:0px 0px; }
+  }
+  @keyframes spin4 {
+    0% { translate:0px 0px; }
+    50%{ translate:0px -1000px;}
+    70%{ translate:0px -1000px;}
+    95%{opacity:1;}
+    99%{opacity:0;}
+    100% { translate:0px 0px; }
+  }
+  

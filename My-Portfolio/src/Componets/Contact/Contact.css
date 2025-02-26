@@ -1,0 +1,162 @@
+.contact {
+    padding: 100px 150px 50px 150px;
+    background-color: rgba(59, 131, 246, 0.188);
+    height: 100vh;
+    animation: fadein 0.5s ease-in-out;
+
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.contact h2 {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    color: #2663EB;
+}
+
+.info {
+    display: flex;
+    gap: 70px;
+}
+
+.right h3 {
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: #2663EB;
+}
+
+.connect {
+    width: 600px;
+    padding-bottom: 10px;
+}
+
+.details {
+    padding: 30px 0;
+}
+
+.details p {
+    padding-bottom: 20px;
+}
+
+.details p i {
+    padding-right: 20px;
+    color: #2663EB;
+    font-size: 25px;
+}
+
+.social-links h4 {
+    color: #2663EB;
+    padding-bottom: 20px;
+}
+
+.social-links img {
+    height: 30px;
+    width: 30px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: contain;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.social-links img:hover{
+    transform: scale(1.1);
+    }
+
+.left input {
+    display: flex;
+    padding: 15px;
+    margin: 20px;
+    width: 500px;
+    border: none;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.left textarea {
+    display: flex;
+    padding: 10px;
+    height: 70px;
+    margin: 20px;
+    width: 500px;
+    background-color: #fff;
+    border-radius: 15px;
+    border: none;
+}
+
+.left button {
+    padding: 10px;
+    margin: 25px 200px;
+    font-weight: 400;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #2663EB;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.left button:hover{
+transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 60px 20px 50px 20px; 
+    }
+
+    .info {
+        flex-direction: column; 
+        gap: 30px; 
+    }
+
+    .right {
+        width: 100%; 
+    }
+
+    .connect {
+        width: 100%; 
+    }
+
+    .left input,
+    .left textarea {
+        width: 90%; 
+        margin: 10px 0; 
+    }
+
+    .left button {
+        margin: 10px auto; 
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        padding: 60px 10px 50px 10px;
+    }
+
+    .info {
+        gap: 20px; 
+    }
+
+    .left button {
+        width: 50%;
+        margin-left: 70px;
+    }
+}
