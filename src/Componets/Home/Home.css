@@ -90,6 +90,10 @@ border-color: #d92eff;
     font-size: 28px;
   }
 
+  .hero-image{
+   padding-top: 30px;
+  }
+
   .hero-description {
     font-size: 14px;
   }
