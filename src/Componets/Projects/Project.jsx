@@ -28,7 +28,7 @@ const projects = [
     title: "Portfolio",
     name: "developer",
     tech: "React, Bootstrap, CSS, EmailJS,",
-    liveLink: "/",
+    liveLink: "https://rohit-mhetre-info.onrender.com",
     img: Portfolio,
   },
   {
