@@ -4,9 +4,9 @@ import emailjs from '@emailjs/browser';
 
 function Contact() {
   const [formData, setFormData] = useState({
-    from_name: "",   
-    reply_to: "",  
-    message: ""      
+    from_name: "",
+    reply_to: "",
+    message: ""
   });
 
   const [status, setStatus] = useState("");
@@ -19,22 +19,23 @@ function Contact() {
     e.preventDefault();
     setStatus("Sending...");
 
-     emailjs.send(
-    process.env.REACT_APP_EMAILJS_SERVICE_ID,
-    process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-    formData,
-    process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-  ).then(
-      () => {
-        setStatus(" Message sent successfully!");
-        setFormData({ from_name: "", reply_to: "", message: "" });
-        setTimeout(() => setStatus(""), 4000);
-      },
-      (error) => {
-        console.error("Email send error:", error);
-        setStatus(" Failed to send message. Please try again.");
-      }
-    );
+    emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      formData,
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
+      .then(
+        () => {
+          setStatus(" Message sent successfully!");
+          setFormData({ from_name: "", reply_to: "", message: "" });
+          setTimeout(() => setStatus(""), 4000);
+        },
+        (error) => {
+          console.error("Email send error:", error);
+          setStatus(" Failed to send message. Please try again.");
+        }
+      );
   };
 
   return (
