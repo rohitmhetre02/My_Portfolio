@@ -1,6 +1,7 @@
 import React from "react";
 import { Link as ScrollLink } from 'react-scroll';
 
+
 import "./Home.css";
 import image from "../../assets/Roya.png";
 import Resume from "../../assets/Rohit Mhetre Resume.pdf";
@@ -30,7 +31,7 @@ function Home() {
   Connect with me
 </ScrollLink>
 
-          <a href={Resume} className="secondary-btn" download>My resume</a>
+          <a href={Resume} className="secondary-btn">My resume</a>
         </div>
       </div>
     </section>

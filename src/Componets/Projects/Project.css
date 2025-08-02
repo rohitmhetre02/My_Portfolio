@@ -1,7 +1,6 @@
 .projects-section {
   background-color: #0b0b0b;
   padding: 100px 20px;
-  color: white;
   text-align: center;
 }
 
@@ -9,6 +8,7 @@
   font-size: 42px;
   margin-bottom: 60px;
   font-weight: bold;
+  color: #fff;
 }
 
 .projects-title span {
@@ -36,15 +36,54 @@
 
 .project-card:hover {
   transform: translateY(-8px);
-background-color: #383738;
+  background-color: #383738;
   box-shadow: 0 0 25px rgba(255, 255, 255, 0.08);
 }
 
-.project-card img {
+.project-image-wrapper {
+  position: relative;
   width: 100%;
-  height: 180px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: filter 0.4s ease;
+  display: block;
+}
+
+.project-content-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(56, 56, 56, 0.85);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+  text-align: center;
+  box-sizing: border-box;
+  gap: 20px; /* 🔥 Adds spacing between children (title, text, stack, icon) */
+}
+
+.project-card:hover .project-img {
+  filter: blur(2px);
+}
+
+.project-card:hover .project-content-overlay {
+  opacity: 1;
+  pointer-events: auto;
+  transition: color 0.3s ease;
 }
 
 .project-content {
@@ -53,7 +92,7 @@ background-color: #383738;
 }
 
 .project-content h3 {
-  margin: 0;
+   margin: 0 0 30px 0;
   font-size: 18px;
   font-weight: bold;
   color: #fff;
@@ -62,7 +101,7 @@ background-color: #383738;
 .project-content p {
   font-size: 14px;
   color: #ccc;
-  margin: 6px 0;
+    margin: 0 0 30px 0;
 }
 
 .project-content .tech {
@@ -80,10 +119,13 @@ background-color: #383738;
   transition: color 0.3s ease;
 }
 
-.project-content a:hover {
-  color: #d92eff;
+.project-content-overlay a {
+  color:#fff;
 }
 
+.project-content-overlay a:hover {
+  color: #d92eff;
+}
 
 @media (max-width: 768px) {
   .projects-title {
@@ -99,7 +141,13 @@ background-color: #383738;
     right: 15px;
   }
 
-  .project-card img {
+  .project-img,
+  .project-image-wrapper {
     height: 150px;
+  }
+
+  .project-content-overlay {
+    padding: 15px;
+    font-size: 14px;
   }
 }

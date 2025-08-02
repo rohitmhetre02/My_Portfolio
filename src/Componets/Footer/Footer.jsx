@@ -22,7 +22,7 @@ function Footer() {
       <hr />
 
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Rohit Mhetre. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Rohit Mhetre.</p>
       </div>
     </footer>
   );

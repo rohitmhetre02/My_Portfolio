@@ -56,24 +56,27 @@ const projects = [
 ];
 function Project() {
   return (
-    <section id='projects' className="projects-section">
-      <h1 className="projects-title">My latest <span>work</span></h1>
-      <div className="project-grid">
-        {projects.map((project, index) => (
-          <div className="project-card" key={index}>
-            <img src={project.img} alt={project.title} />
-            <div className="project-content">
-              <h3>{project.title}</h3>
-              <p>{project.name}</p>
-              <p className="tech">{project.tech}</p>
-              <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                <i className="fa-solid fa-arrow-up-right-from-square"></i>
-              </a>
-            </div>
+   <section id='projects' className="projects-section">
+  <h1 className="projects-title">My latest <span>work</span></h1>
+  <div className="project-grid">
+    {projects.map((project, index) => (
+      <div className="project-card" key={index}>
+        <div className="project-image-wrapper">
+          <img src={project.img} alt={project.title} className="project-img" />
+          <div className="project-content-overlay">
+            <h3>{project.title}</h3>
+            <p>{project.name}</p>
+            <p className="tech">{project.tech}</p>
+            <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+              <i className="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
           </div>
-        ))}
+        </div>
       </div>
-    </section>
+    ))}
+  </div>
+</section>
+
   );
 }
 
