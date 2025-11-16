@@ -83,13 +83,35 @@ function About() {
       </div>
 
       <div className="experience-section">
-        <h2>Experience</h2>
-        <div className="experience-box">
-          <h3>Ceeras IT Services</h3>
-          <p>Full Stack Developer</p>
-          <p className="date">Feb 2025 – Jun 2025</p>
-        </div>
-      </div>
+  <h2>Experience</h2>
+
+  {/* Experience 1 */}
+  <div className="experience-box">
+    <h3 className="role">Full Stack Web Developer</h3>
+
+    <p className="company-line">
+      <span className="company">GrowPro Rise Pvt. Ltd, Pune</span>
+      <br />
+      <span className="mode">Internship</span>
+      <br />
+      <span className="date">Aug 2025 – Present</span>
+    </p>
+  </div>
+
+  {/* Experience 2 */}
+  <div className="experience-box">
+    <h3 className="role">MERN Stack Developer Intern</h3>
+
+    <p className="company-line">
+      <span className="company">Ceeras IT Services</span>
+      <br />
+      <span className="mode">Internship</span>
+      <br />
+      <span className="date">Feb 2025 – Jun 2025</span>
+    </p>
+  </div>
+</div>
+
 
       <div className="skills-section">
         <h2>Skills</h2>
