@@ -1,0 +1,137 @@
+.cta-section {
+  background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
+  padding: 6rem 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-shell {
+  max-width: 1180px;
+  margin: 0 auto;
+  position: relative;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  box-shadow: var(--shadow-soft);
+  padding: 3rem 2rem;
+}
+
+.cta-glow {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  right: -120px;
+  top: -120px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.12), rgba(59, 130, 246, 0) 70%);
+  pointer-events: none;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 1;
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cta-kicker {
+  margin: 0 0 0.9rem;
+  color: var(--accent-strong);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.cta-content h2 {
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(2.1rem, 4vw, 3.5rem);
+  line-height: 1.08;
+  letter-spacing: -0.05em;
+}
+
+.cta-lead {
+  margin: 1.1rem auto 0;
+  max-width: 760px;
+  color: var(--text);
+  font-size: clamp(1.2rem, 2vw, 1.7rem);
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.cta-description {
+  margin: 1rem auto 0;
+  max-width: 720px;
+  color: var(--text-soft);
+  font-size: 1.02rem;
+  line-height: 1.8;
+}
+
+.cta-actions {
+  margin-top: 1.8rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+}
+
+.cta-primary,
+.cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 170px;
+  padding: 0.9rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.cta-primary {
+  background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+  color: #ffffff;
+  box-shadow: 0 15px 26px rgba(37, 99, 235, 0.18);
+}
+
+.cta-secondary {
+  background: #f3f6fb;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.cta-primary:hover,
+.cta-secondary:hover {
+  transform: translateY(-1px);
+  opacity: 0.98;
+}
+
+.cta-tags {
+  margin-top: 1.2rem;
+  color: var(--accent-strong);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 640px) {
+  .cta-section {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .cta-shell {
+    padding: 2.4rem 1.2rem;
+  }
+
+  .cta-actions {
+    flex-direction: column;
+  }
+
+  .cta-primary,
+  .cta-secondary {
+    width: 100%;
+  }
+}
