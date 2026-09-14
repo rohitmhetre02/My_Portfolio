@@ -5,7 +5,7 @@ import Foodflow2 from '../../assets/optimized/img2.png';
 import Portfolio from '../../assets/optimized/Portfolio.webp';
 import Travel from '../../assets/optimized/Travel.webp';
 import Blog from '../../assets/optimized/Blog.webp';
-import Alumni from '../../assets/optimized/Alumni.png';
+import Alumni from '../../assets/optimized/alumni.png';
 import Restoria from '../../assets/optimized/Restoria.webp';
 import ScholarOrbit from '../../assets/optimized/ScholarOrbit.png'
 
