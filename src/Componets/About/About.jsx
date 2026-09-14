@@ -1,129 +1,120 @@
 import React from 'react';
 import './About.css';
-import image from "../../assets/Rohit.jpg";
-
-import HTML from "../../assets/HTML.png";
-import CSS from "../../assets/CSS.png";
-import JS from "../../assets/JS.png";
-import NODEJS from "../../assets/Nodejs.png";
-import EXPRESS from "../../assets/Expreesjs.png";
-import MONGODB from "../../assets/MogoDB.png";
-import REACT from "../../assets/React.png";
-import GIT from "../../assets/Git.png";
-import GITHUB from "../../assets/GitHub.png";
-import WORDPRESS from "../../assets/Wordprees.png";
-import BOOTSTRAP from "../../assets/Bootstrap.png";
-import TAILWIND from "../../assets/Tailwind.png";
-
-const Skills = [
-  { img: HTML, name: "HTML" },
-  { img: CSS, name: "CSS" },
-  { img: JS, name: "JavaScript" },
-  { img: NODEJS, name: "Node.js" },
-  { img: REACT, name: "React.js" },
-  { img: EXPRESS, name: "Express.js" },
-  { img: MONGODB, name: "MongoDB" },
-  { img: GIT, name: "Git" },
-  { img: GITHUB, name: "GitHub" },
-  { img: WORDPRESS, name: "WordPress" },
-  { img: BOOTSTRAP, name: "Bootstrap" },
-  { img: TAILWIND, name: "Tailwind CSS" },
-];
+import image from '../../assets/Rohit.jpg';
 
 function About() {
   return (
     <section id="about" className="about-section">
-      <h1 className="section-title">About <span className="highlight">me</span></h1>
 
+      {/* Section Header */}
+      <div className="about-header">
+        <p className="about-kicker">ABOUT ME</p>
+
+        <h1 className="section-title">
+          Building useful digital experiences with code.
+        </h1>
+
+        <p className="about-subtitle">
+          A full-stack developer focused on creating modern, responsive,
+          and practical web solutions for businesses and individuals.
+        </p>
+      </div>
+
+
+      {/* About Content */}
       <div className="about-container">
+
+        {/* Image */}
         <div className="about-image">
-          <img src={image} alt="Rohit Mhetre" />
+          <img
+            src={image}
+            alt="Rohit Mhetre"
+            loading="lazy"
+          />
         </div>
+
+
+        {/* Text */}
         <div className="about-text">
+
+          <h2>Hi, I'm Rohit Mhetre.</h2>
+
           <p>
-            I'm Rohit Mhetre, a passionate Frontend and Full Stack MERN Developer with 1+ years of experience building modern web solutions. I create responsive interfaces and scalable backends using the latest tools.
-          </p>
-          <p>
-            I’m driven by problem-solving, clean code, and meaningful digital products that create impact.
+            I'm a full-stack developer from Maharashtra, India, focused on
+            building modern websites and practical web applications.
+            I enjoy turning ideas into real digital products — from clean
+            and responsive user interfaces to reliable backend systems
+            and database-driven applications.
           </p>
 
-          <div className="skill-bars">
-            <div className="skill-bar">
-              <span>HTML & CSS</span>
-              <div className="progress-bar">
-                <div className="progress" style={{ width: '100%' }}></div>
+          <p>
+            I work with modern web technologies and focus on understanding
+            the requirement first, building a clean solution, communicating
+            clearly, and delivering a product that is useful for real users.
+          </p>
+
+
+          {/* Focus Areas */}
+          <div className="about-focus">
+
+            <div className="focus-item">
+              <span className="focus-icon">✓</span>
+              <div>
+                <h3>Clean Development</h3>
+                <p>Structured and maintainable code.</p>
               </div>
             </div>
-            <div className="skill-bar">
-              <span>React JS</span>
-              <div className="progress-bar">
-                <div className="progress" style={{ width: '95%' }}></div>
+
+            <div className="focus-item">
+              <span className="focus-icon">✓</span>
+              <div>
+                <h3>Responsive Design</h3>
+                <p>Websites that work across all devices.</p>
               </div>
             </div>
-            <div className="skill-bar">
-              <span>JavaScript</span>
-              <div className="progress-bar">
-                <div className="progress" style={{ width: '85%' }}></div>
+
+            <div className="focus-item">
+              <span className="focus-icon">✓</span>
+              <div>
+                <h3>User Experience</h3>
+                <p>Simple and intuitive interfaces.</p>
               </div>
             </div>
-            <div className="skill-bar">
-              <span>Backend</span>
-              <div className="progress-bar">
-                <div className="progress" style={{ width: '85%' }}></div>
+
+            <div className="focus-item">
+              <span className="focus-icon">✓</span>
+              <div>
+                <h3>Business Requirements</h3>
+                <p>Solutions built around real needs.</p>
               </div>
             </div>
+
           </div>
+
         </div>
       </div>
 
+
+      {/* Stats */}
       <div className="about-stats">
-        <div><span className="gradient">1+</span><p>Years of Experience</p></div>
-        <div><span className="gradient">10+</span><p>Projects Completed</p></div>
-        <div><span className="gradient">5+</span><p>Happy Clients</p></div>
-      </div>
 
-      <div className="experience-section">
-  <h2>Experience</h2>
-
-  {/* Experience 1 */}
-  <div className="experience-box">
-    <h3 className="role">Full Stack Web Developer</h3>
-
-    <p className="company-line">
-      <span className="company">GrowPro Rise Pvt. Ltd, Pune</span>
-      <br />
-      <span className="mode">Internship</span>
-      <br />
-      <span className="date">Aug 2025 – Present</span>
-    </p>
-  </div>
-
-  {/* Experience 2 */}
-  <div className="experience-box">
-    <h3 className="role">MERN Stack Developer Intern</h3>
-
-    <p className="company-line">
-      <span className="company">Ceeras IT Services</span>
-      <br />
-      <span className="mode">Internship</span>
-      <br />
-      <span className="date">Feb 2025 – Jun 2025</span>
-    </p>
-  </div>
-</div>
-
-
-      <div className="skills-section">
-        <h2>Skills</h2>
-        <div className="skills-grid">
-          {Skills.map((skill, index) => (
-            <div className="skill-card" key={index}>
-              <img src={skill.img} alt={skill.name} />
-              <span>{skill.name}</span>
-            </div>
-          ))}
+        <div className="stat-item">
+          <span className="stat-number">1+</span>
+          <p>Years of Experience</p>
         </div>
+
+        <div className="stat-item">
+          <span className="stat-number">10+</span>
+          <p>Projects Completed</p>
+        </div>
+
+        <div className="stat-item">
+          <span className="stat-number">5+</span>
+          <p>Happy Clients</p>
+        </div>
+
       </div>
+
     </section>
   );
 }
